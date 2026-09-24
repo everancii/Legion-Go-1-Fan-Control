@@ -1,6 +1,6 @@
 {
   "name": "LeGo1 Fan Control",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Luke Cama",
   "description": "Full fan control for the Legion Go 2, plus a full-speed fan toggle for the Legion Go 1",
   "flags": [

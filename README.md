@@ -4,8 +4,8 @@
 
 <br>
 
-<h3>LeGo2 Fan Control</h3>
-LeGo2 Fan Control controls your fan directly at the hardware level. You can set any fan speed at any temperature, and it will actually take effect. You could even set the fan to 0 RPM at 100°C if you really wanted to (don't do this 🫠).
+<h3>LeGo1 Fan Control</h3>
+LeGo1 Fan Control controls your fan directly at the hardware level. You can set any fan speed at any temperature, and it will actually take effect. You could even set the fan to 0 RPM at 100°C if you really wanted to (don't do this 🫠).
 
 Some of the core features include:
 <ul>
@@ -32,9 +32,9 @@ The full-speed toggle requires the <b>acpi_call</b> kernel module. On pacman-bas
 <ul>
 <li><p><b>Decky Loader Plugin Version (SteamOS / Bazzite / CachyOS etc…):</b>
   <img src="https://i.postimg.cc/WbvDYRRn/LG2FC-decky.jpg">
-Download the free Decky Loader plugin version <a href="https://github.com/Rodpad/LeGo2-Fan-Control-Decky/releases">here</a>.<br>
+Download the free Decky Loader plugin version <a href="https://github.com/everancii/Legion-Go-1-Fan-Control/releases">here</a>.<br>
 To install, open Decky Loader, go to the Settings cog, Developer and then “Install Plugin from ZIP file”.<br>
-Source available <a href="https://github.com/Rodpad/LeGo2-Fan-Control-Decky">here</a></p></li>
+Source available <a href="https://github.com/everancii/Legion-Go-1-Fan-Control">here</a> — based on <a href="https://github.com/Rodpad/LeGo2-Fan-Control-Decky">Rodpad/LeGo2-Fan-Control-Decky</a> by Luke Cama</p></li>
   
 <li><p><b>Windows Version:</b>
   <img src="https://i.postimg.cc/bJVGFdhY/LG2FC-windows.png">

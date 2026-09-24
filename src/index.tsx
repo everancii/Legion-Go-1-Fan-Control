@@ -3,7 +3,7 @@ import { PanelSection, PanelSectionRow, ToggleField, SliderField, Field, ButtonI
 import { useState, useEffect, useRef, FC } from "react";
 import { QR_CODE_BASE64, LOGO_BASE64, ICON_BASE64 } from "./assets";
 
-const PLUGIN_VERSION = "1.0.0"; // AUTO-INJECTED
+const PLUGIN_VERSION = "1.0.1"; // AUTO-INJECTED
 
 const qrImageSrc = `data:image/png;base64,${QR_CODE_BASE64}`;
 const logoImageSrc = `data:image/png;base64,${LOGO_BASE64}`;
@@ -601,7 +601,7 @@ const Content: FC = () => {
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '15px 0 5px 0' }}>
                 <img
                   src={logoImageSrc}
-                  alt="LeGo2 Fan Control Logo"
+                  alt="LeGo1 Fan Control Logo"
                   style={{ width: '64px', height: 'auto', marginBottom: '10px' }}
                 />
                 <div style={{ fontSize: '16px', fontWeight: 'bold', color: '#FFF' }}>LeGo1 Fan Control</div>
@@ -626,7 +626,7 @@ const Content: FC = () => {
       <PanelSection>
         <PanelSectionRow>
           <ToggleField 
-            label={<span style={{ fontWeight: 'bold' }}>Enable LeGo2 Fan Control</span>}
+            label={<span style={{ fontWeight: 'bold' }}>Enable LeGo1 Fan Control</span>}
             checked={curveEnabled} 
             onChange={(v) => { 
               setCurveEnabled(v); 
@@ -743,12 +743,12 @@ const Content: FC = () => {
 
           <PanelSectionRow>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '15px 0 5px 0' }}>
-              <img 
-                src={logoImageSrc} 
-                alt="LeGo2 Fan Control Logo" 
-                style={{ width: '64px', height: 'auto', marginBottom: '10px' }} 
-              />
-              <div style={{ fontSize: '16px', fontWeight: 'bold', color: '#FFF' }}>LeGo2 Fan Control</div>
+                <img
+                  src={logoImageSrc}
+                  alt="LeGo1 Fan Control Logo"
+                  style={{ width: '64px', height: 'auto', marginBottom: '10px' }}
+                />
+                <div style={{ fontSize: '16px', fontWeight: 'bold', color: '#FFF' }}>LeGo1 Fan Control</div>
               <div style={{ fontSize: '12px', color: '#888', marginBottom: '12px' }}>v{PLUGIN_VERSION}</div>
               <div style={{ fontSize: '13px', color: '#ccc', textAlign: 'center', marginBottom: '6px' }}>
                 Full unrestricted fan control for the<br />Legion Go 2.
