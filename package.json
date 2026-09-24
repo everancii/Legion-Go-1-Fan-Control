@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "build": "rollup -c",
-    "watch": "rollup -cw"
+    "watch": "rollup -cw",
+    "package": "pnpm run build && rm -rf pkg && mkdir -p pkg/legion-go-1-fan-control && cp plugin.json package.json main.py LICENSE README.md pkg/legion-go-1-fan-control/ && cp -r dist pkg/legion-go-1-fan-control/ && cd pkg && zip -r ../LegoFanFlow-Go1-v$npm_package_version.zip legion-go-1-fan-control && cd .. && rm -rf pkg && unzip -l LegoFanFlow-Go1-v$npm_package_version.zip"
   },
   "dependencies": {
     "@decky/api": "latest",
