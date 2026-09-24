@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.zip
+.DS_Store
+__pycache__/
+
+# local editor junk
+rollup
+workspace2
