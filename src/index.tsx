@@ -1,12 +1,13 @@
 import { definePlugin, call } from "@decky/api";
 import { PanelSection, PanelSectionRow, ToggleField, SliderField, Field, ButtonItem } from "@decky/ui";
 import { useState, useEffect, useRef, FC } from "react";
-import { QR_CODE_BASE64, LOGO_BASE64 } from "./assets";
+import { QR_CODE_BASE64, LOGO_BASE64, ICON_BASE64 } from "./assets";
 
-const PLUGIN_VERSION = "0.260924"; // AUTO-INJECTED
+const PLUGIN_VERSION = "1.0.0"; // AUTO-INJECTED
 
 const qrImageSrc = `data:image/png;base64,${QR_CODE_BASE64}`;
 const logoImageSrc = `data:image/png;base64,${LOGO_BASE64}`;
+const iconImageSrc = `data:image/png;base64,${ICON_BASE64}`;
 
 interface CurvePoint {
   temp: number;
@@ -603,7 +604,7 @@ const Content: FC = () => {
                   alt="LeGo2 Fan Control Logo"
                   style={{ width: '64px', height: 'auto', marginBottom: '10px' }}
                 />
-                <div style={{ fontSize: '16px', fontWeight: 'bold', color: '#FFF' }}>LeGo2 Fan Control</div>
+                <div style={{ fontSize: '16px', fontWeight: 'bold', color: '#FFF' }}>LeGo1 Fan Control</div>
                 <div style={{ fontSize: '12px', color: '#888', marginBottom: '12px' }}>v{PLUGIN_VERSION}</div>
                 <div style={{ fontSize: '13px', color: '#ccc', textAlign: 'center', marginBottom: '6px' }}>
                   Fan control for the Legion Go 2,<br />plus full-speed control for the Legion Go.
@@ -774,8 +775,8 @@ const Content: FC = () => {
 };
 
 export default definePlugin(() => ({
-  name: "lego2-fan-control",
-  title: <div className="title" style={{ color: '#66c0f4', fontWeight: 'bold' }}>LeGo2 Fan Control</div>,
+  name: "lego1-fan-control",
+  title: <div className="title" style={{ color: '#66c0f4', fontWeight: 'bold' }}>LeGo1 Fan Control</div>,
   content: <Content />,
-  icon: <span>🌀</span>,
+  icon: <img src={iconImageSrc} alt="fan" style={{ width: '1.2em', height: '1.2em', verticalAlign: '-0.2em' }} />,
 }));

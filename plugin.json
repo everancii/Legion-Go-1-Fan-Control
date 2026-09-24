@@ -1,6 +1,6 @@
 {
-  "name": "LeGo2 Fan Control",
-  "version": "0.260924",
+  "name": "LeGo1 Fan Control",
+  "version": "1.0.0",
   "author": "Luke Cama",
   "description": "Full fan control for the Legion Go 2, plus a full-speed fan toggle for the Legion Go 1",
   "flags": [
@@ -9,5 +9,5 @@
   "api_version": 2,
   "main": "main.py",
   "bin": "dist/index.js",
-  "icon": "🌀"
+  "icon": "https://raw.githubusercontent.com/everancii/Legion-Go-1-Fan-Control/main/assets/fan-icon.png"
 }
